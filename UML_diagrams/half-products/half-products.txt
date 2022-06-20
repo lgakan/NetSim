@@ -1,0 +1,42 @@
+@startuml
+hide empty members
+
+package Storage <<Folder>> {
+class Package{
++ Package()
++ Package(ElementID)
++ Package(Package&&)
++ operator=(Package&&): Package&
++ get_id(): ElementID {query}
++ ~Package()
+}
+
+class PackageQueue {
++ PackageQueue(PackageQueueType)
+}
+
+enum PackageQueueType << enumeration >> {
+FIFO
+LIFO
+}
+
+interface IPackageQueue << interface >> { 
++ {abstract} pop() : Package
++ {abstract} get_queue_type() : PackageQueueType {query} 
+}
+
+interface IPackageStockpile << interface >> {
++ {abstract} push(Package&&) : void
++ {abstract} empty() : bool {query}
++ {abstract} size() : size_type {query}
++ /iteratory/
++ ~IPackageStockpile()
+}
+}
+
+class ElementID << (T, orchid) primitive>>
+
+PackageQueueType .. IPackageQueue
+PackageQueue .. IPackageQueue
+IPackageQueue .. IPackageStockpile
+@enduml

@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+-IC:/Studia/STUDIA_2a/main_last_project/ZPO/NetSim/include -IC:/Studia/STUDIA_2a/main_last_project/ZPO/NetSim/netsim_tests/mocks -IC:/Studia/STUDIA_2a/main_last_project/ZPO/NetSim/netsim_tests/include -isystem C:/Studia/STUDIA_2a/main_last_project/ZPO/NetSim/googletest-master/googletest/include -isystem C:/Studia/STUDIA_2a/main_last_project/ZPO/NetSim/googletest-master/googletest
+=======
+-IE:/ZPO/NetSim/include -IE:/ZPO/NetSim/netsim_tests/mocks -IE:/ZPO/NetSim/netsim_tests/include -isystem E:/ZPO/NetSim/googletest-master/googletest/include -isystem E:/ZPO/NetSim/googletest-master/googletest
+>>>>>>> edbc1e6bce8802816b63b5c93ffd122166a579f7
