@@ -1,7 +1,3 @@
-//
-// Created by ACER on 15.12.2021.
-//
-
 #include "storage_types.hpp"
 
 Package PackageQueue::pop()
