@@ -1,7 +1,3 @@
-//
-// Created by ACER on 15.12.2021.
-//
-
 #include "package.hpp"
 
 std::set<ElementID> Package::assigned_IDs_;
